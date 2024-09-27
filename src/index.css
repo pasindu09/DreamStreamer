@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom styles */
+.bg-sidebar {
+    @apply bg-sidebar-blue;
+  }
+  
+  .cta-btn {
+    @apply text-cta-blue;
+  }
+  
+  .upgrade-btn {
+    @apply bg-cta-blue;
+  }
+  
+  .upgrade-btn:hover {
+    @apply bg-hover-blue;
+  }
+  
+  .active-nav-link {
+    @apply bg-cta-blue;
+  }
+  
+  .nav-item:hover {
+    @apply bg-cta-blue;
+  }
+  
+  .account-link:hover {
+    @apply bg-sidebar-blue;
+  }
+
+  /* Add this to your global styles or in the same file with Tailwind directives */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* for Internet Explorer, Edge */
+  scrollbar-width: none;  /* for Firefox */
+}
